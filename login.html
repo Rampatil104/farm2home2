@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | Farm2Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-leaf" viewBox="0 0 24 24">
+            <path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/>
+            <path d="M5 19c3-5 6-8 10-10"/>
+        </symbol>
+        <symbol id="i-eye" viewBox="0 0 24 24">
+            <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/>
+            <circle cx="12" cy="12" r="3"/>
+        </symbol>
+        <symbol id="i-eye-off" viewBox="0 0 24 24">
+            <path d="M3 3l18 18"/>
+            <path d="M10.6 5.1A10 10 0 0 1 12 5c6.4 0 10 7 10 7a17 17 0 0 1-3.2 4.1M6.5 6.6A17 17 0 0 0 2 12s3.6 7 10 7c1.9 0 3.5-.6 4.9-1.4"/>
+            <path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/>
+        </symbol>
+    </svg>
+    <main class="auth-wrap">
+        <a href="login.html" class="logo" aria-label="Farm2Home">
+            <span class="logo-mark"><svg class="icon"><use href="#i-leaf"/></svg></span>
+            <span class="logo-text">Farm<span>2</span>Home</span>
+        </a>
+        <section class="auth-card">
+            <h1>Welcome back</h1>
+            <p class="auth-sub">Log in to continue to Farm2Home.</p>
+            <form id="loginForm" novalidate>
+                <div class="field">
+                    <label for="loginId">Email or mobile number</label>
+                    <input type="text" id="loginId" autocomplete="username">
+                    <p class="field-error" role="alert"></p>
+                </div>
+                <div class="field">
+                    <label for="loginPassword">Password</label>
+                    <div class="password-box">
+                        <input type="password" id="loginPassword" autocomplete="current-password">
+                        <button type="button" class="toggle-pass" data-target="loginPassword" aria-label="Show password" aria-pressed="false"><svg class="icon icon-on"><use href="#i-eye"/></svg><svg class="icon icon-off"><use href="#i-eye-off"/></svg></button>
+                    </div>
+                    <p class="field-error" role="alert"></p>
+                </div>
+                <div class="form-row">
+                    <label class="check"><input type="checkbox" id="remember"> Remember me</label>
+                    <a href="#" class="text-link" id="forgotLink">Forgot password?</a>
+                </div>
+                <button type="submit" class="auth-btn primary">Login</button>
+            </form>
+            <div class="guest-wrap">
+                <button type="button" class="auth-btn ghost" id="guestBtn">Continue as Guest</button>
+            </div>
+            <p class="auth-switch">Don't have an account?<a href="register.html">Sign Up</a></p>
+        </section>
+    </main>
+    <script src="js/auth.js"></script>
+</body>
+</html>

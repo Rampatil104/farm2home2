@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Farm-Fresh Vine Tomatoes | Farm2Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-leaf" viewBox="0 0 24 24">
+            <path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/>
+            <path d="M5 19c3-5 6-8 10-10"/>
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24">
+            <path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/>
+            <circle cx="12" cy="9.5" r="2.5"/>
+        </symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24">
+            <path d="M12 20s-8-4.9-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6.1-8 11-8 11z"/>
+        </symbol>
+        <symbol id="i-bag" viewBox="0 0 24 24">
+            <path d="M5 8h14l-1 12H6L5 8z"/>
+            <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+        </symbol>
+        <symbol id="i-user" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 21c0-4.5 3.6-7 8-7s8 2.5 8 7"/>
+        </symbol>
+        <symbol id="i-check" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8 12.5l3 3 5-6"/>
+        </symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 7v5l3 2"/>
+        </symbol>
+        <symbol id="i-truck" viewBox="0 0 24 24">
+            <path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/>
+            <circle cx="6.5" cy="17.5" r="1.8"/>
+            <circle cx="16.5" cy="17.5" r="1.8"/>
+        </symbol>
+        <symbol id="i-search" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="M20 20l-4-4"/>
+        </symbol>
+        <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+        <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+        <symbol id="i-users" viewBox="0 0 24 24">
+            <circle cx="9" cy="8" r="3.5"/>
+            <path d="M2 20c0-4 3-6 7-6s7 2 7 6"/>
+            <path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14c2.5.7 4 2.6 4 6"/>
+        </symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24">
+            <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/>
+            <path d="M8.5 12l2.5 2.5 4.5-5"/>
+        </symbol>
+        <symbol id="i-insta" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1"/>
+        </symbol>
+        <symbol id="i-fb" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M13.5 20v-7h2.5l.5-3h-3V8.5c0-.9.4-1.5 1.6-1.5H16.5V4.3C16 4.2 15 4.1 14.3 4.1c-2.2 0-3.8 1.4-3.8 3.9V10H8v3h2.5v7"/>
+        </symbol>
+        <symbol id="i-yt" viewBox="0 0 24 24">
+            <rect x="2.5" y="5.5" width="19" height="13" rx="4"/>
+            <path d="M10 9.5l5 2.5-5 2.5z"/>
+        </symbol>
+    </svg>
+    <div class="announce">
+        <span>Fresh harvests from Nashik &amp; Pune</span>
+        <strong>Free delivery on orders above ₹499</strong>
+        <a href="register.html">Farmer registration <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="Farm2Home home">
+                <span class="logo-mark"><svg class="icon"><use href="#i-leaf"/></svg></span>
+                <span class="logo-text">Farm<span>2</span>Home</span>
+            </a>
+            <form class="search" id="searchForm" role="search">
+                <svg class="icon"><use href="#i-search"/></svg>
+                <label class="sr-only" for="searchInput">Search products</label>
+                <input id="searchInput" type="search" placeholder="Search vegetables, fruits, grains...">
+                <button type="submit" class="search-btn" aria-label="Search">
+                    <svg class="icon"><use href="#i-arrow"/></svg>
+                </button>
+            </form>
+            <div class="header-right">
+                <div class="delivery">
+                    <svg class="icon"><use href="#i-pin"/></svg>
+                    <span><small>Delivering to</small><strong>Nashik, MH</strong></span>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="main-nav" id="mainNav" aria-label="Main">
+                    <a href="index.html">Home</a>
+                    <a href="marketplace.html" class="active">Marketplace</a>
+                    <a href="farmer.html">Farmers</a>
+                    <a href="about.html">About us</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="wishlist.html" class="action-btn" aria-label="Saved items">
+                        <svg class="icon"><use href="#i-heart"/></svg>
+                        <span class="count" id="wishCount">2</span>
+                        <small>Saved</small>
+                    </a>
+                    <a href="cart.html" class="action-btn" aria-label="Cart">
+                        <svg class="icon"><use href="#i-bag"/></svg>
+                        <span class="count" id="cartCount">2</span>
+                        <small>Cart</small>
+                    </a>
+                    <a href="account.html" class="action-btn" aria-label="Account">
+                        <svg class="icon"><use href="#i-user"/></svg>
+                        <small>Account</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container pdp">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="marketplace.html">Marketplace</a>
+            <span>/</span>
+            <a href="vegetables.html">Vegetables</a>
+            <span>/</span>
+            <strong aria-current="page">Farm-Fresh Vine Tomatoes</strong>
+        </nav>
+        <section class="pdp-main">
+            <div class="gallery">
+                <div class="gallery-main">
+                    <img src="images/products/tomatoes.jpg" alt="Farm-Fresh Vine Tomatoes">
+                    <span class="badge">FRESH TODAY</span>
+                    <button class="wish" id="pdpWish" type="button" aria-pressed="false" aria-label="Save Farm-Fresh Vine Tomatoes"><svg class="icon"><use href="#i-heart"/></svg></button>
+                </div>
+            </div>
+            <div class="pdp-info">
+                <p class="eyebrow">VEGETABLES</p>
+                <h1>Farm-Fresh Vine Tomatoes</h1>
+                <div class="pdp-meta">
+                    <span class="product-rating">
+                        <span class="star">★</span>
+                        <strong>4.9</strong>
+                        <span>128 reviews</span>
+                    </span>
+                </div>
+                <p class="product-farm pdp-farm">
+                    <svg class="icon"><use href="#i-pin"/></svg>
+                    Vaibhav SIngh  · Nashik
+                </p>
+                <p class="product-fresh pdp-fresh">Harvested 4 hours ago</p>
+                <div class="pdp-price">
+                    <div class="price"><strong id="unitPrice">₹40</strong> <span>/ 1 kg</span><s>₹50</s></div>
+                </div>
+                <div class="pdp-buy">
+                    <div class="qty" role="group" aria-label="Quantity">
+                        <button type="button" id="qtyMinus" aria-label="Decrease quantity">
+                            <svg class="icon"><path d="M5 12h14"/></svg>
+                        </button>
+                        <output id="qtyValue" aria-live="polite">1</output>
+                        <button type="button" id="qtyPlus" aria-label="Increase quantity">
+                            <svg class="icon"><use href="#i-plus"/></svg>
+                        </button>
+                    </div>
+                    <p class="qty-total">Total <strong id="totalPrice">₹40</strong></p>
+                </div>
+                <div class="pdp-actions">
+                    <button type="button" class="btn btn-green" id="addToCart">
+                        <svg class="icon"><use href="#i-bag"/></svg>
+                        <span>Add to cart</span>
+                    </button>
+                    <button type="button" class="btn btn-orange" id="buyNow">Buy now</button>
+                </div>
+                <ul class="delivery-info">
+                    <li>
+                        <svg class="icon"><use href="#i-pin"/></svg><span><small>Delivering to</small>Nashik, Maharashtra</span>
+                    </li>
+                    <li>
+                        <svg class="icon"><use href="#i-truck"/></svg><span><small>Expected delivery</small>Tomorrow</span>
+                    </li>
+                    <li>
+                        <svg class="icon"><use href="#i-clock"/></svg><span><small>Freshness</small>Harvested today</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="pdp-details">
+            <div class="about">
+                <p class="eyebrow">ABOUT THIS PRODUCT</p>
+                <h2>Grown, picked and sent by one farm</h2>
+                <p class="about-text">Fresh vine tomatoes sourced directly from a local farmer.</p>
+                <dl class="spec-list">
+                    <div>
+                        <dt>Harvest information</dt>
+                        <dd>Harvested 4 hours ago</dd>
+                    </div>
+                    <div>
+                        <dt>Origin</dt>
+                        <dd>Nashik, Maharashtra</dd>
+                    </div>
+                    <div>
+                        <dt>Unit</dt>
+                        <dd>1 kg</dd>
+                    </div>
+                    <div>
+                        <dt>Farming method</dt>
+                        <dd>Natural farming</dd>
+                    </div>
+                    <div>
+                        <dt>Storage</dt>
+                        <dd>Store in a cool, dry place.</dd>
+                    </div>
+                </dl>
+            </div>
+            <article class="farmer-card pdp-farmer">
+                <img src="images/farmers/ramesh.jpg" alt="Young crops on Vaibhav SIngh 's farm">
+                <div class="farmer-body">
+                    <p class="eyebrow">MEET THE FARMER</p>
+                    <p class="verified"><svg class="icon"><use href="#i-check"/></svg>Verified farmer</p>
+                    <h3>Vaibhav SIngh </h3>
+                    <p class="muted">Nashik, Maharashtra</p>
+                    <div class="farmer-foot">
+                        <span class="rating">★ 4.9</span>
+                        <span class="muted">24 products</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <section class="process process-compact">
+        <div class="container">
+            <p class="eyebrow eyebrow-light">FROM FIELD TO FRONT DOOR</p>
+            <h2>Fresh from a local farm, prepared for your doorstep</h2>
+            <p class="process-lead">
+                Fresh produce sourced from local farmers and prepared for doorstep delivery.
+            </p>
+        </div>
+    </section>
+    <section class="container pdp-reviews">
+        <p class="eyebrow">CUSTOMER REVIEWS</p>
+        <div class="reviews-head">
+            <h2>What people say</h2>
+            <div class="rating-summary">
+                <strong>4.9</strong>
+                <span class="stars" aria-label="4.9 out of 5 stars">★★★★★</span>
+                <span class="muted">128 reviews</span>
+            </div>
+        </div>
+        <div class="review-grid">
+            <article class="review-card">
+                <header>
+                    <span class="avatar">AK</span>
+                    <div>
+                        <h3>Aditi Kulkarni</h3>
+                        <p class="muted">Pune</p>
+                    </div>
+                    <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                </header>
+                <blockquote>
+                    “The tomatoes were firm, bright and clearly picked that morning. Knowing the farm made them taste better.”
+                </blockquote>
+            </article>
+            <article class="review-card">
+                <header>
+                    <span class="avatar">VS</span>
+                    <div>
+                        <h3>Vikram Shah</h3>
+                        <p class="muted">Mumbai</p>
+                    </div>
+                    <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                </header>
+                <blockquote>
+                    “Fair price and careful packaging. Nothing was bruised when it reached us.”
+                </blockquote>
+            </article>
+            <article class="review-card">
+                <header>
+                    <span class="avatar">NJ</span>
+                    <div>
+                        <h3>Neha Joshi</h3>
+                        <p class="muted">Nashik</p>
+                    </div>
+                    <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                </header>
+                <blockquote>“Delivery was on time and the tomatoes lasted well through the week.”</blockquote>
+            </article>
+        </div>
+    </section>
+    <section class="container pdp-related">
+        <div class="section-head">
+            <div>
+                <p class="eyebrow">FRESHLY PICKED</p>
+                <h2>You may also like</h2>
+            </div>
+            <a href="marketplace.html" class="link-arrow">
+                Explore marketplace
+                <svg class="icon"><use href="#i-arrow"/></svg>
+            </a>
+        </div>
+        <div class="product-grid" id="relatedGrid"></div>
+    </section>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><span class="logo-mark"><svg class="icon"><use href="#i-leaf"/></svg></span><span class="logo-text">Farm<span>2</span>Home</span></a>
+                    <p>
+                        Fresh from farmers, delivered to you. Connecting Nashik, Pune and Maharashtra's best growers with thoughtful homes.
+                    </p>
+                    <div class="socials">
+                        <a href="#" aria-label="Instagram"><svg class="icon"><use href="#i-insta"/></svg></a>
+                        <a href="#" aria-label="Facebook"><svg class="icon"><use href="#i-fb"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg class="icon"><use href="#i-yt"/></svg></a>
+                    </div>
+                </div>
+                <nav aria-label="Shop fresh">
+                    <h3>Shop fresh</h3>
+                    <a href="vegetables.html">Fresh vegetables</a><a href="fruits.html">Organic fruits</a><a href="dairy.html">Dairy &amp; A2 milk</a><a href="grains.html">Grains &amp; staples</a>
+                </nav>
+                <nav aria-label="For farmers">
+                    <h3>For farmers</h3>
+                    <a href="register.html">Sell your produce</a><a href="farmer-dashboard.html">Farmer portal</a><a href="index.html#promise">Fair pricing promise</a><a href="index.html#promise">Transport support</a>
+                </nav>
+                <nav aria-label="Customer care">
+                    <h3>Customer care</h3>
+                    <a href="orders.html">Track an order</a><a href="index.html">Help center &amp; FAQ</a><a href="index.html">Contact us</a><a href="tel:+919822012345" class="phone">+91 98220 12345</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Farm2Home · Built for farmers &amp; conscious consumers</span>
+                <span>Serving Nashik · Pune · Mumbai · Kolhapur</span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/product.js"></script>
+</body>
+</html>

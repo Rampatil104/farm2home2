@@ -1,0 +1,276 @@
+.media-frame {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    background: linear-gradient(180deg, #8fc1d9 0%, #e9b45f 52%, #9a6b12 100%);
+}
+
+.media-frame img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.media-frame img.is-missing {
+    display: none;
+}
+
+.media-label {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: rgba(28, 58, 32, .86);
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.about-hero {
+    padding: 100px 0 118px;
+}
+
+.about-hero-grid {
+    display: grid;
+    grid-template-columns: 700fr 832fr;
+    gap: 68px;
+    align-items: center;
+}
+
+.about-hero .eyebrow {
+    margin-bottom: 22px;
+}
+
+.about-hero h1 {
+    font-size: clamp(40px, 3.95vw, 76px);
+    line-height: 1.02;
+    font-weight: 600;
+    letter-spacing: -.05em;
+}
+
+.about-hero h1 em {
+    font-style: normal;
+    color: var(--orange);
+}
+
+.about-lead {
+    margin: 30px 0 34px;
+    font-size: 20px;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 640px;
+}
+
+.about-hero .btn-green {
+    color: #fff;
+}
+
+.hero-media {
+    aspect-ratio: 832/487;
+    border-radius: 24px;
+}
+
+.beliefs {
+    background: var(--tint);
+    padding: 104px 0 108px;
+}
+
+.beliefs h2 {
+    margin-bottom: 46px;
+}
+
+.belief-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.belief-grid li {
+    border-top: 2px solid var(--leaf);
+    padding-top: 24px;
+}
+
+.belief-no {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--leaf);
+    margin-bottom: 26px;
+}
+
+.belief-grid .icon-lg {
+    width: 30px;
+    height: 30px;
+    color: var(--green);
+    stroke-width: 1.6;
+}
+
+.belief-grid h3 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -.05em;
+    margin: 18px 0 10px;
+    line-height: 1.2;
+}
+
+.belief-grid p {
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 360px;
+}
+
+.mission {
+    padding: 112px 0 125px;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.mission-media {
+    aspect-ratio: 750/569;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #6ea85e 0%, #254d2b 55%, #e8730c 130%);
+}
+
+.mission-copy .eyebrow {
+    margin-bottom: 16px;
+}
+
+.mission-copy h2 {
+    line-height: 1.08;
+    margin-bottom: 30px;
+}
+
+.mission-copy p:not(.eyebrow) {
+    font-size: 20px;
+    line-height: 1.45;
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.identity {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 36px;
+}
+
+.identity-mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    flex: none;
+}
+
+.identity strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--ink);
+}
+
+.identity span:not(.identity-mark) {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+@media (max-width: 1280px) {
+    .about-hero {
+        padding: 72px 0 88px;
+    }
+
+    .about-hero-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+    }
+
+    .mission-grid {
+        gap: 56px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 44px;
+    }
+
+    .belief-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 25px;
+    }
+
+    .beliefs {
+        padding: 80px 0;
+    }
+
+    .mission {
+        padding: 80px 0 96px;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 44px;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-hero {
+        padding: 44px 0 56px;
+    }
+
+    .about-lead {
+        font-size: 18px;
+        margin: 22px 0 28px;
+    }
+
+    .hero-media {
+        aspect-ratio: 4/3;
+        border-radius: 18px;
+    }
+
+    .media-label {
+        left: 12px;
+        bottom: 12px;
+    }
+
+    .beliefs {
+        padding: 56px 0 64px;
+    }
+
+    .beliefs h2 {
+        margin-bottom: 32px;
+    }
+
+    .belief-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .mission {
+        padding: 56px 0 72px;
+    }
+
+    .mission-copy p:not(.eyebrow) {
+        font-size: 18px;
+    }
+
+    .identity strong {
+        font-size: 17px;
+    }
+}
